@@ -34,6 +34,7 @@ variable "private_route_table" {
   description = "Name of the private route table"
 }
 variable "environment" {
+  type        = string
   description = "Name of the environment"
 }
 variable "ingress_service" {
