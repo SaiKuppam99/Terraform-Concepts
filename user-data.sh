@@ -8,3 +8,5 @@
 # echo "<h1>${var.vpc_name}-public-server-${count.index + 1}</h1>" >> /var/www/html/index.html
 # sudo systemctl start nginx
 # sudo systemctl enable nginx
+########
+#######
