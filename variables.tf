@@ -1,3 +1,8 @@
+variable "region" {
+  description = "The AWS region to deploy into"
+  type        = string
+  default     = "eu-west-2" # Update with your desired default region
+}
 variable "vpc_name" {
   description = "Name of the VPC"
 }
@@ -35,4 +40,13 @@ variable "ingress_service" {
   description = "List of inbound service ports for the security group"
   type        = list(number) # Define the type as a list of numbers for better validation
   default     = [80, 443, 8080, 22, 8443, 3306, 1900, 1443]
+}
+variable "amis" {
+  description = "Value of the ami in their respective regions"
+}
+variable "instance_type" {
+  description = "Type of the ec2 instance"
+}
+variable "key_name" {
+  description = "value of the key"
 }

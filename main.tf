@@ -25,19 +25,3 @@ resource "aws_internet_gateway" "internet_gateway_name" {
     Name = "${var.vpc_name}-igw"
   }
 }
-
-
-resource "aws_security_group" "example" {
-  ingress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
