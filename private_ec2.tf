@@ -14,3 +14,4 @@ resource "aws_instance" "private-server" {
     environment = var.environment
   }
 }
+ 
